@@ -8,7 +8,11 @@
 }
 
 body{
-    background-color: #db8d21;
+    background: rgb(131,58,180);
+    background: -moz-linear-gradient(0deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    background: -webkit-linear-gradient(0deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    background: linear-gradient(0deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#833ab4",endColorstr="#fcb045",GradientType=1);
     display: flex;
     flex-direction: column;
     min-height: 100vh;  
@@ -56,9 +60,13 @@ nav ul li{
 
 nav ul li a{
     font-size: 1.2rem;
-
+    transition: color 0.5s;
     text-decoration: none;
     color: white;
+}
+
+nav ul li a:hover{
+    color: black;
 }
 
 
@@ -123,6 +131,16 @@ footer p{
 .galeria div{
     overflow: hidden;
     position: relative;
+}
+
+.galeria img{
+    transition: 0.5s;
+    object-fit: cover;
+}
+
+.galeria img:hover{
+    transform: scale(1.2);
+    cursor: pointer;
 }
 
 
