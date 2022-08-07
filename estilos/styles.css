@@ -1,0 +1,329 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #db8d21;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;  
+}
+
+main{
+    width: 100%;
+}
+
+
+
+/* comienzo header */
+header{
+    background-color: #fcb045;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0rem 1rem 0rem 1rem;
+}
+
+.logo{
+    width: 10em;
+    padding: 10px;
+}
+/* fin header */
+
+
+
+/* comienzo nav */
+nav{
+    font-size: 1rem; 
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+}
+
+nav ul li{
+    list-style-type: none;
+    padding: 0.8rem;
+}
+
+nav ul li a{
+    font-size: 1.2rem;
+
+    text-decoration: none;
+    color: white;
+}
+
+
+/* fin nav */
+
+
+
+/* comienzo footer */
+footer{
+    background-color: #833ab4;
+    margin: 0px;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+footer p{
+    color: white;
+}
+/* fin footer */
+
+
+
+/* comienzo index */
+.imagenDeInicio{
+    width: 100%;
+}
+/* fin index */
+
+
+
+/* comienzo sobreMi */
+.seccionSobreMi{
+    display: flex;
+}
+
+.imagenSobreMi{
+    width: 30%;
+}
+
+.textoSobreMi{
+    padding: 1rem;
+    color: white;
+}
+
+.textoSobreMi span{
+    font-size: 2rem;
+    font-weight: bold;
+}
+/* fin sobreMi */
+
+
+
+/* comienzo galeria */
+.galeria{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    justify-items:center;
+}
+
+.galeria div{
+    overflow: hidden;
+    position: relative;
+}
+
+
+/* fin galeria */
+
+
+
+/* comienzo escuela */
+.institucionalEscuela{
+    display: flex;
+    flex-direction: column;
+    padding: 0.8rem;
+    align-items: center;
+}
+
+.institucionalEscuela h2{
+    padding: 1em;
+    text-align: center;
+}
+/* fin escuela */
+
+
+
+/* comienzo contacto */
+.formularioContacto{
+    padding: 2rem;
+}
+/* fin contacto */
+
+
+
+/*configuración responsive*/
+@media (min-width:100px){
+    header{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .seccionSobreMi{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imagenSobreMi{
+        width: 70%;
+    }
+
+    .galeria{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        justify-items:center;
+    }
+
+    .galeria img{
+        width: 150px;
+        padding: 5px;
+    }
+
+    .institucionalEscuela iframe{
+        width: 336px;
+        height: 189px;
+    }
+
+}
+
+@media (min-width:500px){
+    header{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .seccionSobreMi{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imagenSobreMi{
+        width: 70%;
+    }
+
+    .galeria{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        justify-items:center;
+    }
+
+    .galeria img{
+        width: 150px;
+        padding: 5px;
+    }
+
+    .institucionalEscuela iframe{
+        width: 336px;
+        height: 189px;
+    }
+
+}
+
+@media (min-width:768px){
+    header{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .seccionSobreMi{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imagenSobreMi{
+        width: 70%;
+    }
+
+    .galeria{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        justify-items:center;
+    }
+
+    .galeria img{
+        width: 200px;
+        padding: 7px;
+    }
+
+    .institucionalEscuela iframe{
+        width: 560px;
+        height: 315px;
+    }
+}
+
+@media (min-width:1024px){
+    header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: right;
+    }
+
+    .seccionSobreMi{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .imagenSobreMi{
+        width: 30%;
+    }
+
+    .galeria{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        justify-items:center;
+    }
+    
+    .galeria img{
+        width: 250px;
+        padding: 10px;
+    }
+
+    .institucionalEscuela iframe{
+        width: 1120px;
+        height: 630px;
+    }
+}
+
+
+

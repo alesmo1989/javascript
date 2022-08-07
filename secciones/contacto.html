@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilos/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <img class="logo" src="../images/logo.png" alt="">
+        <nav>
+            <ul>
+                <li>
+                    <a href="../index.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="./sobreMi.html">Sobre mí</a>
+                </li>
+                <li>
+                    <a href="./galeria.html">Galería</a>
+                </li>
+                <li>
+                    <a href="./escuela.html">Escuela</a>
+                </li>
+                <li>
+                    <a href="./contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <article>
+                <form class="formularioContacto">
+                    <label for="nombre">Ingrese nombre:</label>
+                    <input type="text" name="nombre" style="color: black;"><br>
+                    <label for="edad">Ingrese edad:</label>
+                    <input type="number" name="edad" style="color: black;"><br>
+    
+                    <div>Hombre</div>
+                    <input type="radio" name="sexo" value="hombre">
+                    <div>Mujer</div>
+    
+                    <input type="radio" name="sexo" value="mujer"><br>
+    
+                    <div>Seleccione tipo de consulta</div>
+                    <select name="tipoConsulta" style="color: black;">
+                        <option value="tipoConsultaEscuela">Escuela</option>
+                        <option value="tipoConsultaCaricaturasPersonalizadas">Caricaturas personalizadas</option>
+                        <option value="tipoConsultaExposiciones">Exposiciones</option>
+                    </select><br>
+    
+                    <label for="consulta">Ingrese su consulta:</label><br>
+                    <textarea type="text" name="consulta" id="" cols="30" rows="10" style="color: black;"></textarea><br>
+    
+                    <input type="submit" style="color: black;" value="Enviar"/><br>
+    
+                    <div>Acepta términos y condiciones</div>
+                    <input type="checkbox" name="acepta" value="1">
+                </form>
+            </article>
+        </section>
+
+    </main>
+    
+
+    <footer>
+        <p>Dirección: Calle falsa 1234, Capital Federal, Buenos Aires, Argentina<br>
+        Horario de atención: lunes a viernes 09 a 18 hs.</p>
+
+        <div>
+            <img src="../images/icons8-facebook-nuevo.svg" alt="iconoFacebook">
+            <img src="../images/icons8-instagram.svg" alt="iconoInstagram">
+        </div>
+
+    </footer>
+
+</body>
+</html>
