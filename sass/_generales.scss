@@ -1,0 +1,26 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    font-family: 'Varela Round', sans-serif;
+    box-sizing: border-box;
+    
+    body{
+        background-color: $colorClaro;
+        min-height: 100vh;
+        color: black;
+        a{
+            text-decoration: none;
+        }
+
+        section{
+            padding: 3rem;
+        }
+    
+    }
+
+}
+
+
+
+
