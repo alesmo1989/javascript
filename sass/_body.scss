@@ -1,0 +1,17 @@
+body{
+    background-image: $patron;
+    min-height: 100vh;
+    color: black;
+    a{
+        text-decoration: none;
+    }
+
+    section{
+        padding: 3rem;
+    }
+
+    h1{
+        @include configH1;
+    }
+
+}

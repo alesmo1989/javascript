@@ -1,14 +1,38 @@
-.tituloEscuela{
-    h1{
-    font-size: 2rem;
-    font-weight: bold;
-    }
-
-}
-
 .videoEscuela{
     margin-bottom: 2rem;
+}
+
+iframe{
+    border-radius: 30px;
+    box-shadow: $sombra;
+}
+
+@media (min-width: map-get($resoluciones, xs)){
     iframe{
-        border-radius: 30px;
+        width: map-get($resoluciones, sm)*0.8;
+        height: map-get($resoluciones, sm)*0.4;
+    }
+
+}
+
+@media (min-width: map-get($resoluciones, md)){
+    iframe{
+        width: map-get($resoluciones, md)*0.8;
+        height: map-get($resoluciones, md)*0.4;
     }
 }
+
+@media (min-width: map-get($resoluciones, lg)){
+    iframe{
+        width: map-get($resoluciones, lg)*0.8;
+        height: map-get($resoluciones, lg)*0.4;
+    }
+}
+
+@media (min-width: map-get($resoluciones, xl)){
+    iframe{
+        width: map-get($resoluciones, xl)*0.8;
+        height: map-get($resoluciones, xl)*0.4;
+    }
+}
+

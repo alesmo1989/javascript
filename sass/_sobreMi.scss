@@ -2,24 +2,33 @@
     padding-left: 4rem;
     padding-right: 4rem;
     .contenedorImagenSobreMi{
+
         .imagenSobreMi{
             width: 100%;
             border-radius: 2rem;
+            box-shadow: $sombra;
         }
     }
-    .tituloTextoSobreMi{
-        border-bottom: 2px solid black;
-        margin-top: 1.5rem;
-        h1{
-            font-size: 2rem;
-            font-weight: bold;
-        }
-    }
-    .textoSobreMi{
-        p{
-            margin-top: 2rem;
-        }
 
+    .contenedorTextoSobreMi{
+        background-color: $colorClaro;
+        border-radius: 2rem;
+        box-shadow: $sombra;
+        .tituloTextoSobreMi{
+            border-bottom: 2px solid black;
+            margin-top: 1.5rem;
+            h1{
+                font-size: 2rem;
+                font-weight: bold;
+            }
+        }
+        .textoSobreMi{
+            p{
+                margin-top: 2rem;
+            }
+    
+        }
     }
+
 }
 

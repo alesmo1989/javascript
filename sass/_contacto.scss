@@ -1,20 +1,33 @@
 .seccionContacto{
-    .form-group{
-        margin-top: 1rem;
-        .tipoConsulta{
-            color: black;
-            #opcionTipoConsulta{
+    .formContacto{
+        background-color: $colorClaro;
+        border-radius: 2rem;
+        padding: 2rem;
+        box-shadow: $sombra;
+        .form-group{
+            margin-top: 1rem;
+    
+            .tipoConsulta{
                 color: black;
+                #opcionTipoConsulta{
+                    color: black;
+                }
             }
     
-        }
+            .botonEnviar{
+                background-color: $colorOscuro;
+                padding: 0.5rem;
+                width: 8rem;
+                border: 0;
+            }
 
-        .botonEnviar{
-            background-color: $colorOscuro;
-            border: 0;
+            .botonBorrar{
+                @extend .botonEnviar;
+                background-color: red;
+            }
         }
-       
     }
+
 }
 
 .form-control:focus{
