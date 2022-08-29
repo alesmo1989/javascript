@@ -10,23 +10,28 @@
         }
     }
 
-    .contenedorTextoSobreMi{
-        background-color: $colorClaro;
-        border-radius: 2rem;
-        box-shadow: $sombra;
+    .contenedorTituloSobreMi{
+        
         .tituloTextoSobreMi{
-            border-bottom: 2px solid black;
-            margin-top: 1.5rem;
+            @include configContenedorTitulo;
+            width: 100%;
+            @media (min-width: map-get($resoluciones, xs)){
+                margin-top: 0.5rem;
+            }
+            @media (min-width: map-get($resoluciones, lg)){
+                margin-top: 0;
+            }
             h1{
-                font-size: 2rem;
-                font-weight: bold;
+                text-align: center;
             }
         }
         .textoSobreMi{
             p{
-                margin-top: 2rem;
+                @include configContenedorTitulo;
+                width: 100%;
+                margin-top: 0.6rem;
+                padding: 1rem;
             }
-    
         }
     }
 

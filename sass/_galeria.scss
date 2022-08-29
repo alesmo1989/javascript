@@ -1,4 +1,8 @@
 .seccionGaleria{
+    .contenedorTituloGaleria{
+        @include configContenedorTitulo;
+    }
+
     .contenedorImagenGaleria{
         img{
             width: 80%;
@@ -26,6 +30,7 @@
         }
     }
 }
+
 
 
 

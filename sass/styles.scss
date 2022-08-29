@@ -1,11 +1,14 @@
 $colorOscuro: #ffb600;
-$colorClaro: #fff2d1;
+$colorClaro: rgb(255, 242, 209, 0.8);
 $patron: url("../images/pattern.png"); 
 $sombra: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
-@mixin configH1{
-    font-size: 2rem;
-    font-weight: bold;
+@mixin configContenedorTitulo{
+  background-color: $colorClaro;
+  border-radius: 2rem;
+  box-shadow: $sombra;
+  width: 70%;
+  margin: auto;
 };
 
 $resoluciones: (

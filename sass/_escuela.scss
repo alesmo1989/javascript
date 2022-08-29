@@ -1,16 +1,21 @@
-.videoEscuela{
-    margin-bottom: 2rem;
+.contenedorTituloEscuela{
+    @include configContenedorTitulo;
 }
 
-iframe{
-    border-radius: 30px;
-    box-shadow: $sombra;
+.videoEscuela{
+    margin-top: 2rem;
+    iframe{
+        border-radius: 30px;
+        box-shadow: $sombra;
+    }
 }
+
+
 
 @media (min-width: map-get($resoluciones, xs)){
     iframe{
-        width: map-get($resoluciones, sm)*0.8;
-        height: map-get($resoluciones, sm)*0.4;
+        width: map-get($resoluciones, sm)*0.6;
+        height: map-get($resoluciones, sm)*0.3;
     }
 
 }
