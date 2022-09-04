@@ -1,0 +1,15 @@
+{
+    "name": "adrycaturas",
+    "version": "1.0.0",
+    "description": "página de caricaturas con 5 secciones",
+    "main": "index.html",
+    "keywords": [
+        "Caricaturas",
+        "Adrycaturas",
+        "escuela de dibujo",
+        "escuela de caricaturas",
+        "caricaturas de famosos"
+    ],
+    "author": "alejandro smovazank",
+    "license": "coderhouse"  
+}
