@@ -12,7 +12,7 @@ header {
   border-radius: 0px 0px 40px 40px;
 }
 header .logo {
-  width: 70%;
+  width: 80%;
 }
 header nav {
   width: 100%;
@@ -159,7 +159,7 @@ footer .contenidoFooter {
   margin: auto;
   width: 100%;
   margin-top: 0.6rem;
-  padding: 1rem;
+  padding: 1.05rem;
 }
 
 .seccionGaleria .contenedorTituloGaleria {
@@ -247,14 +247,11 @@ footer .contenidoFooter {
 .seccionContacto .formContacto .form-group .tipoConsulta #opcionTipoConsulta {
   color: black;
 }
-.seccionContacto .formContacto .form-group .botonEnviar, .seccionContacto .formContacto .form-group .botonBorrar {
+.seccionContacto .formContacto .form-group .botonEnviar {
   background-color: #ffb600;
   padding: 0.5rem;
   width: 6rem;
   border: 0;
-}
-.seccionContacto .formContacto .form-group .botonBorrar {
-  background-color: red;
 }
 
 .form-control:focus {
