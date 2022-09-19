@@ -50,38 +50,50 @@
 
   <main>
     <section class="seccionContacto">
-      <div class="col-lg-6 col-md-8 col-sm-10 formContacto">
-        <form>
-          <div class="form-group">
-            <label for="nombre">Ingrese nombre</label> 
-            <input id="nombre" name="nombre" type="text" required="required" class="form-control">
-          </div>
-          <div class="form-group">
-            <label for="edad">Ingrese edad</label> 
-            <input id="edad" name="edad" type="text" required="required" class="form-control">
-          </div>
-          <div class="form-group">
-            <label for="email">Ingrese dirección de email</label> 
-            <input id="email" name="email" placeholder="direccion@mail.com" type="text" class="form-control" required="required">
-          </div>
-          <div class="form-group">
-            <label for="tipoConsulta">Ingrese tipo de consulta</label> 
-            <div>
-              <select id="tipoConsulta" name="tipoConsulta" required="required" class="custom-select">
-                <option id="opcionTipoConsulta"value="consultaEscuela">Escuela</option>
-                <option id="opcionTipoConsulta" value="consultaCaricaturas">Famosos a pedido</option>
-              </select>
-            </div>
-          </div>
-          <div class="form-group">
-            <label for="consulta">Ingrese consulta</label> 
-            <textarea id="consulta" name="consulta" cols="40" rows="10" required="required" class="form-control"></textarea>
-          </div> 
-          <div class="form-group">
-            <button name="submit" type="submit" class="btn btn-primary botonEnviar">Enviar</button>
-          </div>
-        </form>
+      <div class="row">
+        <div class="col-lg-6 col-md-8 col-sm-8 text-center contenedorTituloContacto">
+          <h1>Formulario de contacto</h1>
+        </div>
       </div>
+      <div class="row contenedorForm">
+        <div class="col-lg-6 col-md-8 col-sm-8 formContacto">
+          <form>
+            <div class="form-group">
+              <label for="nombre">Ingrese nombre</label> 
+              <input id="nombre" name="nombre" type="text" required="required" class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="edad">Ingrese edad</label> 
+              <input id="edad" name="edad" type="text" required="required" class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="email">Ingrese dirección de email</label> 
+              <input id="email" name="email" placeholder="direccion@mail.com" type="text" class="form-control" required="required">
+            </div>
+            <div class="form-group">
+              <label for="tipoConsulta">Ingrese tipo de consulta</label> 
+              <div>
+                <select id="tipoConsulta" name="tipoConsulta" required="required" class="custom-select">
+                  <option id="opcionTipoConsulta"value="consultaEscuela">Escuela</option>
+                  <option id="opcionTipoConsulta" value="consultaCaricaturas">Famosos a pedido</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="consulta">Ingrese consulta</label> 
+              <textarea id="consulta" name="consulta" cols="40" rows="10" required="required" class="form-control"></textarea>
+            </div> 
+            <div class="form-group">
+              <button name="submit" type="submit" class="btn btn-primary botonEnviar">Enviar</button>
+            </div>
+          </form>
+        </div>
+
+        <div class="col-lg-6 contenedorImagenContacto">
+          <img src="../images/caricaturas/Messi.png" alt="" class="imagenContacto">
+        </div>
+      </div>
+      
     </section>
   </main>
 
@@ -120,14 +132,14 @@
           </p>
         </div>
         <div class="contenidoFooter">
-          <a href="">
+          <a href="https://www.facebook.com/adryrita">
             <img src="../images/icons8-facebook-nuevo.svg" alt="iconoFacebook">
           </a>
-          <a href="">
+          <a href="https://instagram.com/adrycaturas?igshid=YzA2ZDJiZGQ=">
             <img src="../images/icons8-instagram.svg" alt="iconoInstagram">
           </a>
-          <a href="">
-            <img src="../images/icons8-tik-tok-40.svg" alt="iconoTiktok" href="#">
+          <a href="https://tiktok.com/@adryayvaian">
+            <img src="../images/icons8-tik-tok-40.svg" alt="iconoTiktok">
           </a>
         </div>
       </div>

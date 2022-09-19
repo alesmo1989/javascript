@@ -11,15 +11,19 @@ header {
   padding: 0.5rem 1rem 0.5rem 1rem;
   border-radius: 0px 0px 40px 40px;
 }
-header .logo {
-  width: 80%;
+header .navbar-brand {
+  width: 12rem;
+  padding: 0;
+}
+header .navbar-brand .logo {
+  width: 100%;
 }
 header nav {
   width: 100%;
 }
 header nav .nav-item {
   font-size: 1.2rem;
-  padding: 0rem 0.7rem 0rem 0.7rem;
+  padding: 0rem 0.3rem 0rem 0.3rem;
   font-weight: bold;
 }
 header nav .nav-item #navOpcion {
@@ -108,7 +112,7 @@ footer .contenidoFooter {
   background-color: rgba(255, 242, 209, 0.8);
   border-radius: 2rem;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  width: 70%;
+  width: 64%;
   margin: auto;
   position: absolute;
   z-index: 5;
@@ -134,7 +138,7 @@ footer .contenidoFooter {
   background-color: rgba(255, 242, 209, 0.8);
   border-radius: 2rem;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  width: 70%;
+  width: 64%;
   margin: auto;
   width: 100%;
 }
@@ -155,7 +159,7 @@ footer .contenidoFooter {
   background-color: rgba(255, 242, 209, 0.8);
   border-radius: 2rem;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  width: 70%;
+  width: 64%;
   margin: auto;
   width: 100%;
   margin-top: 0.6rem;
@@ -166,7 +170,7 @@ footer .contenidoFooter {
   background-color: rgba(255, 242, 209, 0.8);
   border-radius: 2rem;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  width: 70%;
+  width: 64%;
   margin: auto;
 }
 .seccionGaleria .contenedorImagenGaleria img {
@@ -196,7 +200,7 @@ footer .contenidoFooter {
   background-color: rgba(255, 242, 209, 0.8);
   border-radius: 2rem;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  width: 70%;
+  width: 64%;
   margin: auto;
 }
 
@@ -232,26 +236,61 @@ footer .contenidoFooter {
     height: 480px;
   }
 }
-.seccionContacto .formContacto {
+.seccionContacto .contenedorTituloContacto {
+  background-color: rgba(255, 242, 209, 0.8);
+  border-radius: 2rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 64%;
+  margin: auto;
+  width: 66%;
+}
+.seccionContacto .contenedorTituloContacto h1 {
+  margin-bottom: 0;
+}
+.seccionContacto .contenedorForm {
+  margin-top: 2rem;
+}
+.seccionContacto .contenedorForm .formContacto {
   background-color: rgba(255, 242, 209, 0.8);
   border-radius: 2rem;
   padding: 2rem;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.seccionContacto .formContacto .form-group {
+.seccionContacto .contenedorForm .formContacto .form-group {
   margin-top: 1rem;
 }
-.seccionContacto .formContacto .form-group .tipoConsulta {
+.seccionContacto .contenedorForm .formContacto .form-group .tipoConsulta {
   color: black;
 }
-.seccionContacto .formContacto .form-group .tipoConsulta #opcionTipoConsulta {
+.seccionContacto .contenedorForm .formContacto .form-group .tipoConsulta #opcionTipoConsulta {
   color: black;
 }
-.seccionContacto .formContacto .form-group .botonEnviar {
+.seccionContacto .contenedorForm .formContacto .form-group .botonEnviar {
   background-color: #ffb600;
   padding: 0.5rem;
   width: 6rem;
   border: 0;
+}
+.seccionContacto .contenedorForm .contenedorImagenContacto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.seccionContacto .contenedorForm .contenedorImagenContacto .imagenContacto {
+  width: 50%;
+}
+@media (min-width: 0) {
+  .seccionContacto .contenedorForm {
+    justify-content: center;
+  }
+  .seccionContacto .imagenContacto {
+    display: none;
+  }
+}
+@media (min-width: 992px) {
+  .seccionContacto .imagenContacto {
+    display: block;
+  }
 }
 
 .form-control:focus {
