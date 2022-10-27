@@ -15,19 +15,31 @@
                 } 
             }
         
-            .nombreCelebridad{
+            .nombreProducto, .precioProducto, .botonAgregar{
                 display: flex;
                 justify-content: center;
 
-                h5{
+                h5, button{
                     padding: 0.5rem;
                     background-color: $colorOscuro;
-                    border-radius: 0rem 0rem 2rem 2rem;
+                    //border-radius: 0rem 0rem 2rem 2rem;
+                    margin-bottom: 0;
                     width: 80%;
                     text-align: center;
                     color: white;
                 }
-        }
+            }
+            .botonAgregar{
+                
+                button{
+                    border-radius: 0rem 0rem 2rem 2rem;
+                    &:hover{
+                        color: black;
+                    } 
+                }
+                
+            }
+
     }
 }
 

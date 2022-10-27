@@ -1,122 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4328JXLFG"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-P4328JXLFG');
-    </script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Las mejores caricaturas realizadas por Adrycaturas. Caricaturas de famosos, escuela de caricaturas">
-    <meta name="keywords" content="Caricaturas, Adrycaturas, escuela de dibujo, escuela de caricaturas, caricaturas de famosos">
+    <meta name="description" content="Pet shop Hamlet - Artículos para tu mascota">
+    <meta name="keywords" content="Pet shop, Hamlet, mascota">
     <meta name="google-site-verification" content="WzeoQ1FQoaz68fhd0mgGs8FEG2H3ZhVTKr66amYzSH4" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="estilos/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
-    <title>Adrycaturas | Principal</title>
+    <script src="./javascript/stock.js"></script>
+    <title>Hamlet Pet Shop | Principal</title>
 </head>
 <body>
-
   <header>
     <nav class="navbar navbar-expand-lg">
-      <div class="container-fluid">
-        <a class="navbar-brand contenedorLogo">
-          <img class="logo" src="images/logo.png" alt="">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse nav" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" id="navOpcion" href="index.html">Inicio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" id="navOpcion" href="./secciones/sobreMi.html">Sobre mí</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" id="navOpcion" href="./secciones/galeria.html">Galería</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" id="navOpcion" href="./secciones/escuela.html">Escuela</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" id="navOpcion" href="./secciones/contacto.html">Contacto</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </header>
-    
-  <main>
-    <section class="container-fluid seccionInicio">
-      <div class="row">
-        <div class="col-12 contenedorPresentacion">
-          <img class="imagenDeInicio" src="./images/imagenDeInicio.png" alt="imagenDeInicio">
-          <div class="contenedorTitulo">
-            <h1>Adrycaturas</h1>
+        <div class="container-fluid">
+          <a class="navbar-brand">
+            <img class="logo" src="./images/logo.png" alt="">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse nav" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" id="navOpcion" href="#">Carrito</a>
+              </li>
+            </ul>
           </div>
-        </div>     
-      </div>
-    </section>
-  </main>
-    
-  <footer>
-    <div class="row">
-      <div class="col-lg-4 footerMenu">
-        <div class="tituloFooter">
-          <p>
-            Menú
-          </p>
         </div>
-        <div class="contenidoFooter contenidoFooterMenu">
-          <a href="index.html">Inicio</a>
-          <a href="./secciones/sobreMi.html">Sobre mí</a>
-          <a href="./secciones/galeria.html">Galería</a>
-          <a href="./secciones/escuela.html">Escuela</a>
-          <a href="./secciones/contacto.html">Contacto</a>
-        </div>
-      </div>
+      </nav>
+  </header>
 
-      <div class="col-lg-4 footerContacto">
-        <div class="tituloFooter">
-          <p>
-            Contacto
-          </p>
+  <main>
+      <section class="container-fluid seccionGaleria">
+        <div class="text-center contenedorTituloGaleria">
+            <h1>Artículos</h1>
         </div>
-        <div class="contenidoFooter">
-          adrycaturas@gmail.com
+
+        <div class="row" id="contenedorStock">
         </div>
-      </div>
+      </section>
       
-      <div class="col-lg-4 footerRedes">
-        <div class="tituloFooter">
-          <p>
-            ¡Seguime en mis redes!
-          </p>
-        </div>
-        <div class="contenidoFooter">
-          <a href="https://www.facebook.com/adryrita">
-            <img src="./images/icons8-facebook-nuevo.svg" alt="iconoFacebook">
-          </a>
-          <a href="https://instagram.com/adrycaturas?igshid=YzA2ZDJiZGQ=">
-            <img src="./images/icons8-instagram.svg" alt="iconoInstagram">
-          </a>
-          <a href="https://tiktok.com/@adryayvaian">
-            <img src="./images/icons8-tik-tok-40.svg" alt="iconoTiktok">
-          </a>
-        </div>
-      </div>
-    </div>
+      <section class="carritoDeCompras">
+        <table class="table table-dark table-striped">
+          <thead class="thead-dark">
+            <tr id="trId">
+              <th>Nombre</th>
+              <th>Precio</th>
+              <th>Tipo de mascota</th>
+              <th>Cantidad</th>
+              <th></th>
+
+            </tr>
+          </thead>
+
+          <tbody id="items" class="table-striped">
+
+          </tbody>
+          <tfoot>
+            <tr>
+              <th>Total</th>
+              <th id="total"></th>
+            </tr>
+          </tfoot>
+
+        </table>
+        <button type="button" class="btn btn-danger" id="vaciarCarrito">Vaciar carrito</button>
+        <button type="button" class="btn btn-warning" id="ordenarCarrito">Ordenar</button>
+      </section>
+  </main>
+
+
+  <footer>
+
   </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+  <script src="./javascript/script.js"></script>
 </body>
 </html>

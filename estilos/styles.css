@@ -125,47 +125,6 @@ footer .contenidoFooter {
   margin-bottom: 0;
 }
 
-.seccionSobreMi {
-  padding-left: 4rem;
-  padding-right: 4rem;
-}
-.seccionSobreMi .contenedorImagenSobreMi .imagenSobreMi {
-  width: 100%;
-  border-radius: 2rem;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-.seccionSobreMi .contenedorTituloSobreMi .tituloTextoSobreMi {
-  background-color: rgba(255, 242, 209, 0.8);
-  border-radius: 2rem;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  width: 64%;
-  margin: auto;
-  width: 100%;
-}
-@media (min-width: 0) {
-  .seccionSobreMi .contenedorTituloSobreMi .tituloTextoSobreMi {
-    margin-top: 0.5rem;
-  }
-}
-@media (min-width: 992px) {
-  .seccionSobreMi .contenedorTituloSobreMi .tituloTextoSobreMi {
-    margin-top: 0;
-  }
-}
-.seccionSobreMi .contenedorTituloSobreMi .tituloTextoSobreMi h1 {
-  text-align: center;
-}
-.seccionSobreMi .contenedorTituloSobreMi .textoSobreMi p {
-  background-color: rgba(255, 242, 209, 0.8);
-  border-radius: 2rem;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  width: 64%;
-  margin: auto;
-  width: 100%;
-  margin-top: 0.6rem;
-  padding: 1.05rem;
-}
-
 .seccionGaleria .contenedorTituloGaleria {
   background-color: rgba(255, 242, 209, 0.8);
   border-radius: 2rem;
@@ -183,117 +142,21 @@ footer .contenidoFooter {
 .seccionGaleria .contenedorImagenGaleria img:hover {
   border: 10px solid #ffb600;
 }
-.seccionGaleria .contenedorImagenGaleria .nombreCelebridad {
+.seccionGaleria .contenedorImagenGaleria .nombreProducto, .seccionGaleria .contenedorImagenGaleria .precioProducto, .seccionGaleria .contenedorImagenGaleria .botonAgregar {
   display: flex;
   justify-content: center;
 }
-.seccionGaleria .contenedorImagenGaleria .nombreCelebridad h5 {
+.seccionGaleria .contenedorImagenGaleria .nombreProducto h5, .seccionGaleria .contenedorImagenGaleria .nombreProducto button, .seccionGaleria .contenedorImagenGaleria .precioProducto h5, .seccionGaleria .contenedorImagenGaleria .precioProducto button, .seccionGaleria .contenedorImagenGaleria .botonAgregar h5, .seccionGaleria .contenedorImagenGaleria .botonAgregar button {
   padding: 0.5rem;
   background-color: #ffb600;
-  border-radius: 0rem 0rem 2rem 2rem;
+  margin-bottom: 0;
   width: 80%;
   text-align: center;
   color: white;
 }
-
-.contenedorTituloEscuela {
-  background-color: rgba(255, 242, 209, 0.8);
-  border-radius: 2rem;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  width: 64%;
-  margin: auto;
+.seccionGaleria .contenedorImagenGaleria .botonAgregar button {
+  border-radius: 0rem 0rem 2rem 2rem;
 }
-
-.videoEscuela {
-  margin-top: 2rem;
-}
-.videoEscuela iframe {
-  border-radius: 30px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-@media (min-width: 0) {
-  iframe {
-    width: 345.6px;
-    height: 172.8px;
-  }
-}
-@media (min-width: 768px) {
-  iframe {
-    width: 614.4px;
-    height: 307.2px;
-  }
-}
-@media (min-width: 992px) {
-  iframe {
-    width: 793.6px;
-    height: 396.8px;
-  }
-}
-@media (min-width: 1200px) {
-  iframe {
-    width: 960px;
-    height: 480px;
-  }
-}
-.seccionContacto .contenedorTituloContacto {
-  background-color: rgba(255, 242, 209, 0.8);
-  border-radius: 2rem;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  width: 64%;
-  margin: auto;
-  width: 66%;
-}
-.seccionContacto .contenedorTituloContacto h1 {
-  margin-bottom: 0;
-}
-.seccionContacto .contenedorForm {
-  margin-top: 2rem;
-}
-.seccionContacto .contenedorForm .formContacto {
-  background-color: rgba(255, 242, 209, 0.8);
-  border-radius: 2rem;
-  padding: 2rem;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-.seccionContacto .contenedorForm .formContacto .form-group {
-  margin-top: 1rem;
-}
-.seccionContacto .contenedorForm .formContacto .form-group .tipoConsulta {
+.seccionGaleria .contenedorImagenGaleria .botonAgregar button:hover {
   color: black;
-}
-.seccionContacto .contenedorForm .formContacto .form-group .tipoConsulta #opcionTipoConsulta {
-  color: black;
-}
-.seccionContacto .contenedorForm .formContacto .form-group .botonEnviar {
-  background-color: #ffb600;
-  padding: 0.5rem;
-  width: 6rem;
-  border: 0;
-}
-.seccionContacto .contenedorForm .contenedorImagenContacto {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.seccionContacto .contenedorForm .contenedorImagenContacto .imagenContacto {
-  width: 50%;
-}
-@media (min-width: 0) {
-  .seccionContacto .contenedorForm {
-    justify-content: center;
-  }
-  .seccionContacto .imagenContacto {
-    display: none;
-  }
-}
-@media (min-width: 992px) {
-  .seccionContacto .imagenContacto {
-    display: block;
-  }
-}
-
-.form-control:focus {
-  border-color: #ffb600;
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px #ffb600;
 }/*# sourceMappingURL=styles.css.map */
