@@ -17,8 +17,9 @@ document.addEventListener('DOMContentLoaded', ()=>{
 //Problema: vacía la tabla pero el carrito sigue cargado al cargar mas elementos
 botonVaciar.addEventListener('click', () =>{
     carrito = []
-    localStorage.setItem('carrito', JSON.stringify(carrito))
+    console.log(carrito)
     actualizarCarrito()
+    swal("Carrito vaciado");
 })
 
 //Problema: no funciona botón ordenar
@@ -93,5 +94,15 @@ const actualizarCarrito = () =>{
     })
     total.innerText = '$ ' + carrito.reduce((acc, prod) => (acc + prod.precio)*prod.cantidad, 0)
 }
+
+fetch(`./javascript/ejemploStockFetch.json`)
+ .then((response) => {
+    return response.text();
+ })
+ .then((data) => {
+    data = JSON.parse(data);
+    console.log(data);
+
+ })
 
 
